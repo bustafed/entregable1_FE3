@@ -1,3 +1,4 @@
+
 // El componente App es el padre de:
 // - Cabecera
 // - Listado
