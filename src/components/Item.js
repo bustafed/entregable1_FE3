@@ -27,7 +27,7 @@ export default function Item(props) {
       <h3>{props.data.producto.nombre}</h3>
       <p>{props.data.producto.descripcion}</p>
       <h5>En stock: {stock > 0 ? stock : <span>agotado</span>}</h5>
-      <button onClick={restarStock} disabled={stock > 0 ? false : true}>{stock > 0 ? "comprar" : "sin stock"}</button>
+      <button onClick={restarStock} disabled={!(stock > 0)}>{stock > 0 ? "comprar" : "sin stock"}</button>
     </div>
   )
 }
